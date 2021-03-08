@@ -1,32 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width", initial-scale=1>
-        <title>brnsyllabus</title>
+<head>
+    <title>brnsyllabus</title>
         <link rel="shortcut icon" type="image/png" href="images/brnsyllabus.png">
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Architects+Daughter&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/e12c74f269.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- Kenarlık -->
-<div class="sidebar">
-    <a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a>
-    <a href="dersprogramı.html"><i class="fas fa-calendar-alt"></i> Ders Programı</a>
-    <a href="ödevler.html"><i class="fas fa-file"></i> Ödevler</a>
-    <a href="sınavlar.html"><i class="fas fa-file"></i> Sınavlar</a>
-    <a href="https://dti.ieu.edu.tr/tr"><i class="fas fa-book"></i> IEU Mütercim-Tercümanlık</a>
-    <a href="https://oasis.izmirekonomi.edu.tr/"><i class="fas fa-book"></i> OASIS</a>
-    <a href="https://ieu.blackboard.com/"><i class="fas fa-book"></i> Blackboard</a>
-    <a href="https://panopto.ieu.edu.tr/"><i class="fas fa-book"></i> Panopto</a>
-    <a href="https://zcstd.izmirekonomi.edu.tr/"><i class="fas fa-book"></i> Webmail</a>
-  </div>
-        <div class="container" style="text-align: center;">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(images/comingsoon.jpg) no-repeat center fixed black;
+  background-size: cover;
+  height: 25%;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    top: 4vw;
+    position: relative;
+    animation: top 0.6s;
+}
+
+@keyframes top {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 4vw;
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size:5vw;
+}
+
+hr {
+  width: 75vw;
+}
+
+p {
+    color: white;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size:4vw
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active"> Ana Sayfa</a>
+    <a href="dersprogramı.html"> Ders Programı</a>
+    <a href="ödevler.html"> Ödevler</a>
+    <a href="sınavlar.html"> Sınavlar</a>
+    <a href="https://dti.ieu.edu.tr/tr"> IEU Mütercim-Tercümanlık</a>
+    <a href="https://oasis.izmirekonomi.edu.tr/"> OASIS</a>
+    <a href="https://ieu.blackboard.com/"> Blackboard</a>
+    <a href="https://panopto.ieu.edu.tr/"> Panopto</a>
+    <a href="https://zcstd.izmirekonomi.edu.tr/"> Webmail</a>
+    <a href="https://discord.gg/3uVfU3x"> Discord</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="container" style="text-align: center;" style="padding-left:16px">
         <h1>brnsyllabus</h1>
+        <hr>
+        <p>Created by Baran Toprak Senkul</p>
         </div>
-        <div class="footer">
-            <p>Created by Baran Toprak Senkul</p>
-        </div>
-    </body>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
 </html>

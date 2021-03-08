@@ -4,20 +4,29 @@
   <meta name="viewport" content="width=device-width", initial-scale=1>
   <title>Ders Programı</title>
   <link rel="shortcut icon" type="image/png" href="images/brnsyllabus.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="dersprogramı.css">
-<script src="https://kit.fontawesome.com/e12c74f269.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3cabad1a00.js" crossorigin="anonymous"></script>
 <style>
+
+.box {
+  background-image: url(images/142694.jpg);
+}
+
+.gün {
+  opacity: 1 !important;
+  color: black;
+}
 .accordion {
-   background-color: gray;
-    opacity: 0.4;
+  background-color: gray;
+    opacity: 0.45;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 17px;
   transition: 0.4s;
 }
 
@@ -28,7 +37,6 @@
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: #00aedb;
   overflow: hidden;
 }
 </style>
@@ -39,32 +47,33 @@
 </div><br>
 <br>
 <h2 style="color: white;">Ders Programı</h2>
-<button class="accordion"><strong>Pazartesi</strong></button>
+<div class="box">
+<button class="accordion"><p class="gün"><strong>Pazartesi</strong></p></button>
 <div class="panel">
   <p><span><strong>Saat</strong></span><em> Ders Adı</em></p>
   <p><span><strong>Saat</strong></span><em> Ders Adı</em></p>
 </div>
 
-<button class="accordion"><strong>Salı</strong></button>
+<button class="accordion"><p class="gün"><strong>Salı</strong></p></button>
 <div class="panel">
   <p><span><strong>Saat</strong></span><em> Ders Adı</em></p>
 </div>
 
-<button class="accordion"><strong>Çarşamba</strong></button>
+<button class="accordion"><p class="gün"><strong>Çarşamba</strong></p></button>
 <div class="panel">
   <p><span><strong>Saat</strong></span><em> Ders Adı</em></p>
 </div>
 
-<button class="accordion"><strong>Perşembe</strong></button>
+<button class="accordion"><p class="gün"><strong>Perşembe</strong></p></button>
 <div class="panel">
   <p><span><strong>Saat</strong></span><em> Ders Adı</em></p>
 </div>
 
-<button class="accordion"><strong>Cuma</strong></button>
+<button class="accordion"><p class="gün"><strong>Cuma</strong></p></button>
 <div class="panel">
   <p><span><strong>Saat</strong></span><em> Ders Adı</em></p>
 </div>
-
+</div>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;

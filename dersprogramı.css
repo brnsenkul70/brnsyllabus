@@ -1,6 +1,7 @@
 body {
-  background-image: url(images/comingsoon.jpg);
-  background-size: 100%;
+  background: url(images/comingsoon.jpg) no-repeat center fixed black;
+  background-size: cover;
+  height: 25%;
 }
 
 @viewport {
@@ -14,8 +15,8 @@ body {
 }
 
 .sidebar {
-  height: 100%;
-  width: 170px;
+  height: 10%;
+  width: auto;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -39,7 +40,6 @@ body {
 }
 
 .panel {
-  background-image: url(images/142694.jpg);
   max-width: 100%;
 }
 
