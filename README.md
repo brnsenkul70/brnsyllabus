@@ -6,3 +6,4 @@ Mobile version bug fixed.
 The bug in "Ders Programı" section is fixed.
 The bug in "Ödevler" and "Sınavlar" section for mobile is fixed too.
 Application icon has been added.
+Sidebar changed with top navigation bar.
