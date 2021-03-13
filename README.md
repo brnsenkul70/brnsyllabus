@@ -9,3 +9,4 @@ Application icon has been added.
 Sidebar changed with top navigation bar.
 Timetable has been added.
 Fonts are updated.
+Font bug solved.
